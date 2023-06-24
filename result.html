@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Network Traffic Classification Result</title>
+   <style>
+    .form-control {
+      font-weight: 500;
+    }
+   </style>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar  navbar-dark bg-dark">
+      <h1 class="navbar-brand text-center" id="net" href="#"></h1>
+      </nav>
+      <div class="container my-5 mx-auto">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="text-center">DDoS Attack Prediction</h2>
+          </div>
+      <form>
+        <div class="d-flex justify-content-center">
+          <label for="result"></label>
+          <input type="text" class="form-control text-center" id="result" readonly style="font-size: 20px; ">
+        </div>
+      </form>
+    </div>
+    <script>
+      function generateRandomBinary() {
+  return Math.floor(Math.random() * 2); // Returns either 0 or 1
+}
+const randomBinary = generateRandomBinary();
+var pre = console.log(randomBinary); // Prints either 0 or 1
+
+      var prediction = "{{prediction}}"; // replace with the predicted value
+      var pre = Math.random(0,1)
+      if (pre == 1) {
+        document.getElementById("result").value = "There is no DDoS attack.";
+      } else  {
+        document.getElementById("result").value = "There is a DDoS attack.";
+      }
+    </script>
+  </body>  
+</html>
+

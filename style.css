@@ -1,0 +1,27 @@
+/* Style for h1 element */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+  }
+  
+  /* Style for p element */
+  p#result {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+  
+  /* Media query for responsive design */
+  @media screen and (max-width: 600px) {
+    /* Style for h1 element on smaller screens */
+    h1 {
+      font-size: 1.5em;
+    }
+    
+    /* Style for p element on smaller screens */
+    p#result {
+      font-size: 1em;
+    }
+  }
+  
